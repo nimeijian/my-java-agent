@@ -1,4 +1,4 @@
-package com.shein.agent;
+package com.mycorp.agent;
 
 import javassist.ClassPool;
 import javassist.CtClass;
@@ -13,7 +13,7 @@ import java.security.ProtectionDomain;
 
 public class AgentMain {
     /** 被转换的类 */
-    public static final String TRANSFORM_CLASS = "com.shein.agentexample.AgentExample";
+    public static final String TRANSFORM_CLASS = "com.mycorp.agentexample.AgentExample";
 
     /** 静态加载。Java agent指定的premain方法，会在main方法之前被调用 */
     public static void premain(String args, Instrumentation instrumentation) {

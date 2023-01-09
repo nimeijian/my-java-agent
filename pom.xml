@@ -2,9 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.shein</groupId>
+    <groupId>com.mycorp</groupId>
     <artifactId>agent</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -35,9 +35,9 @@
                         <!-- 设置manifest配置文件-->
                         <manifestEntries>
                             <!--Premain-Class: 代表 Agent 静态加载时会调用的类全路径名。-->
-                            <Premain-Class>com.shein.agent.AgentMain</Premain-Class>
+                            <Premain-Class>com.mycorp.agent.AgentMain</Premain-Class>
                             <!--Agent-Class: 代表 Agent 动态加载时会调用的类全路径名。-->
-                            <Agent-Class>com.shein.agent.AgentMain</Agent-Class>
+                            <Agent-Class>com.mycorp.agent.AgentMain</Agent-Class>
                             <!--Can-Redefine-Classes: 是否可进行类定义。-->
                             <Can-Redefine-Classes>true</Can-Redefine-Classes>
                             <!--Can-Retransform-Classes: 是否可进行类转换。-->
